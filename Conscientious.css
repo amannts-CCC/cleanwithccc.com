@@ -1,12 +1,30 @@
-body2{
+/*	INDEX OF VALUES AND NOTATION
+	DESCRIPTION								VALUE	CCC Colors
+		@Bubble-BG of bubbles:				ed8b00	#d1ba94	f9f6f1
+		@Bubble-border: 					0e50b6	
+		@Active-link-BG (lighter)			eda845	
+		@text-color-nav						black	
+		@text-color-norm					white	black	
+		@Background color					white	
+			@Inner-border
+			@Inner-BG
+	
+	/*a:link {color:;} 	unvisited link		84d2f1
+	/*a:visited {color:;}visited link		84d2f1
+	/*a:hover {color:#;} hover link			eda845
+	/*a:active {color:;}selected link		yellow
+	/*
+													|<--tags for search-->|
+					|<---------	function notes---->|
+*/
+ body2{
 	padding: 0;
 	margin-top: 0;
 	overflow-y:scroll;
 	font-family: 'Livvic', sans-serif;
 	font-size: 14px;
 	text-decoration: none;
-	min-width: 100%;	
-	text-align:center;
+	
 }
 body{
 
@@ -20,8 +38,16 @@ a:visited {color:84d2f1;}  						/* visited link */
 a:hover {color:#eda845;}  						/* mouse over link */
 a:active {color:yellow;}  						/* selected link */
 #nav{
-	min-width: 100%;
-	text-align:center;
+	/*min-width:600px;*/
+}
+#nav_wrapper{
+	/*width: 960px;*/
+	min-width:800px;
+	margin: 50px;
+	text-align: left;
+	background-color: f9f6f1;   				/*@Bubble-BG */
+	position:fixed;
+	z-index:6;
 }
 #nav ul{
 
