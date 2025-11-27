@@ -1,30 +1,12 @@
-/*	INDEX OF VALUES AND NOTATION
-	DESCRIPTION								VALUE	CCC Colors
-		@Bubble-BG of bubbles:				ed8b00	#d1ba94	f9f6f1
-		@Bubble-border: 					0e50b6	
-		@Active-link-BG (lighter)			eda845	
-		@text-color-nav						black	
-		@text-color-norm					white	black	
-		@Background color					white	
-			@Inner-border
-			@Inner-BG
-	
-	/*a:link {color:;} 	unvisited link		84d2f1
-	/*a:visited {color:;}visited link		84d2f1
-	/*a:hover {color:#;} hover link			eda845
-	/*a:active {color:;}selected link		yellow
-	/*
-													|<--tags for search-->|
-					|<---------	function notes---->|
-*/
- body2{
+body2{
 	padding: 0;
 	margin-top: 0;
 	overflow-y:scroll;
-	font-family: Horizon, Geneva, sans-serif;
+	font-family: 'Livvic', sans-serif;
 	font-size: 14px;
 	text-decoration: none;
-	
+	min-width: 100%;	
+	text-align:center;
 }
 body{
 
@@ -38,16 +20,8 @@ a:visited {color:84d2f1;}  						/* visited link */
 a:hover {color:#eda845;}  						/* mouse over link */
 a:active {color:yellow;}  						/* selected link */
 #nav{
-	/*min-width:600px;*/
-}
-#nav_wrapper{
-	/*width: 960px;*/
-	min-width:800px;
-	margin: 50px;
-	text-align: left;
-	background-color: f9f6f1;   				/*@Bubble-BG */
-	position:fixed;
-	z-index:6;
+	min-width: 100%;
+	text-align:center;
 }
 #nav ul{
 
@@ -121,12 +95,10 @@ a:active {color:yellow;}  						/* selected link */
 	position: fixed;
 	top: 0px;
 	left: 0;
+	min-height: 100%;
+	min-width: 100%;
 	opacity:.1;
 	filter:alpha(opacity=10); /* For IE8 and earlier */
-}
-#bg img{
-	min-height: 50%;
-	min-width: 50%;
 }
 #centered{
 
@@ -136,15 +108,15 @@ a:active {color:yellow;}  						/* selected link */
 	margin-left: auto;
 	margin-right: auto;
 	
-	font-family: Horizon, Geneva, sans-serif;
+	font-family: 'Livvic', sans-serif;
 	color: black;                  				/*@text-color-norm*/
-	padding: 10px;
+	padding: 20px;
 	text-align:center;
 	
-	border: 5px solid 0e50b6;					/* @Bubble-border */
-	border-radius:10px;
+	border: 2px solid #896b3a;					/* @Bubble-border 0e50b6*/
+	border-radius:7px;
 
-	background-color: rgba(249, 246, 241, 1);     				/* @Bubble-BG */
+	background-color: rgba(249, 246, 241, .8);     				/* @Bubble-BG */
 }
 #centered img{
 
@@ -166,48 +138,6 @@ a:active {color:yellow;}  						/* selected link */
 	padding-left:25px;
 }
 #centered h3{
-
-	font-size:20px;
-	text-align:center;
-}
-#left{
-
-	position:relative;
-	top: 60px;
-	width:605px;
-	margin-left: auto;
-	margin-right: auto;
-	
-	font-family: Horizon, Geneva, sans-serif;
-	color: black;                  				/*@text-color-norm*/
-	padding: 10px;
-	text-align:left;
-	
-	border: 5px solid 0e50b6;					/* @Bubble-border */
-	border-radius:10px;
-
-	background-color: rgba(249, 246, 241, 1);     				/* @Bubble-BG */
-}
-#left img{
-
-	max-width: 100%;
-	max-height:280px;
-
-}
-#left-text{
-	
-	font-size:18px;
-	height:120px;
-	overflow-y:hidden;
-	
-}
-#left h2{
-
-	font-size:30px;
-	text-align:left;
-	padding-left:25px;
-}
-#left h3{
 
 	font-size:20px;
 	text-align:center;
